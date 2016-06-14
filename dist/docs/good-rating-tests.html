@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Vision Archive API Docs</title>
+      <link rel="stylesheet" href="css/foundation.min.css" />
+      <link rel="stylesheet" type="text/css" href="css/styles.css" />
+      <link rel="stylesheet" type="text/css" href="css/highlight.github.css" />
+      
+  </head>
+
+
+  <body class="antialiased hide-extras">
+
+    <div class="sidebar-top">
+  <div class="logo"></div>
+  Vision Archive API Docs
+</div>
+
+<div class="sidebar">
+  
+  <form>
+    <input tabindex="1" id="autocomplete" type="search"
+          placeholder="search" autocomplete="off" />
+  </form>
+
+  <nav>
+    <ul class="side-nav">
+
+      
+
+          <li class="divider"></li>
+
+          <li class="heading">
+            <a href="good-rating-tests.html">Good Rating Tests</a>
+          </li>
+
+          
+            <li>
+              <a href="good-rating-tests.html#-items" data-search="/items">
+                /items
+                
+                  <span class="label">2</span>
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="good-rating-tests.html#-user" data-search="/user">
+                /user
+                
+                  <span class="label">5</span>
+                
+              </a>
+            </li>
+          
+
+      
+
+    </ul>
+  </nav>
+
+</div>
+
+
+    <div class="content-top"></div>
+    <div class="content">
+
+      <h1>Good Rating Tests</h1>
+
+      
+        <div class="group">
+          <a name="-items"></a>
+          <h2>/items</h2>
+          <ul class="samples">
+            
+              <li>
+                <div class="summary">
+  <p>Get all items with ratings data</p>
+
+</div>
+
+<div class="operation">
+
+  <div class="method color-GET">
+    GET
+  </div>
+
+  <div class="request">
+    <div class="url">
+      GET
+      
+        <pre><code>/items/</code></pre>
+      
+    </div>
+    Sample request
+    <div class="expanders">
+      
+      
+      
+      
+      <a href="#sample5-request-curl">curl</a><span>
+    </div>
+  </div>
+
+  <div id="sample5-url" class="collapsible">
+    <pre><code>/items/</code></pre>
+  </div>
+  <div id="sample5-request-headers" class="collapsible">
+    <pre><code></code></pre>
+  </div>
+  <div id="sample5-request-payload" class="collapsible">
+    
+  </div>
+  <div id="sample5-request-attachments" class="collapsible">
+    
+  </div>
+  <div id="sample5-request-curl" class="collapsible">
+    <pre><code class="wrap">curl -X <span class="hljs-keyword">GET</span> <span class="hljs-string">"http://visionarchive.io/items/"</span></code></pre>
+  </div>
+
+  <div class="response">
+    Response 200 OK
+    <div class="expanders">
+      
+      
+        <a href="#sample5-response-body">body</a>
+      
+    </div>
+  </div>
+
+  <div id="sample5-response-headers" class="collapsible">
+    <pre><code></code></pre>
+  </div>
+  <div id="sample5-response-body" class="collapsible">
+    <pre><code>[
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab36886"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"33007513382472098000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00003705"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">3</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab36887"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"81163721159100530001"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00003705"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">0</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab36888"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"43263617949560280000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00003705"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">1</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab36889"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"38534387806430460000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00003705"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">3</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab3688a"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"62254156870767480000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00003705"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">3</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab3688b"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"33007513382472098000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00000126"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">3</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab3688c"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"81163721159100530001"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00000126"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">4</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab3688d"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"43263617949560280000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00000126"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">1</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab3688e"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"38534387806430460000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00000126"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">3</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab3688f"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"62254156870767480000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00000126"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">2</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab36890"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"33007513382472098000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00001097"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">1</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab36891"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"81163721159100530001"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00001097"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">4</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab36892"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"43263617949560280000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00001097"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">2</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab36893"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"38534387806430460000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00001097"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">0</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab36894"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"62254156870767480000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00001097"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">3</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab36895"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"33007513382472098000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00000873"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">3</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab36896"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"81163721159100530001"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00000873"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">2</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab36897"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"43263617949560280000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00000873"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">0</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab36898"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"38534387806430460000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00000873"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">2</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab36899"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"62254156870767480000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00000873"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">4</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab3689a"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"33007513382472098000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00001433"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">0</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab3689b"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"81163721159100530001"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00001433"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">4</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab3689c"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"43263617949560280000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00001433"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">1</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab3689d"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"38534387806430460000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00001433"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">0</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab3689e"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"62254156870767480000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00001433"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">3</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab3689f"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"33007513382472098000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00003629"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">2</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab368a0"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"81163721159100530001"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00003629"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">0</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab368a1"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"43263617949560280000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00003629"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">1</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab368a2"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"38534387806430460000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00003629"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">1</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab368a3"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"62254156870767480000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00003629"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">1</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab368a4"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"33007513382472098000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00001727"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">2</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab368a5"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"81163721159100530001"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00001727"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">0</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab368a6"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"43263617949560280000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00001727"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">2</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab368a7"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"38534387806430460000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00001727"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">0</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab368a8"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"62254156870767480000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00001727"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">0</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab368a9"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"33007513382472098000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00000873"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">4</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab368aa"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"81163721159100530001"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00000873"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">3</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab368ab"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"43263617949560280000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00000873"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">1</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab368ac"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"38534387806430460000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00000873"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">2</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab368ad"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"62254156870767480000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00000873"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">4</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab368ae"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"33007513382472098000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00000231"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">0</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab368af"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"81163721159100530001"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00000231"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">2</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab368b0"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"43263617949560280000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00000231"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">0</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab368b1"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"38534387806430460000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00000231"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">3</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab368b2"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"62254156870767480000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00000231"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">2</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab368b3"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"33007513382472098000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00000867"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">2</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab368b4"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"81163721159100530001"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00000867"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">2</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab368b5"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"43263617949560280000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00000867"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">2</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab368b6"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"38534387806430460000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00000867"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">4</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab368b7"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"62254156870767480000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00000867"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">1</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>}
+]</code></pre>
+  </div>
+
+</div>
+
+              </li>
+            
+              <li>
+                <div class="summary">
+  <p>Get all ratings for a specific item id</p>
+
+</div>
+
+<div class="operation">
+
+  <div class="method color-GET">
+    GET
+  </div>
+
+  <div class="request">
+    <div class="url">
+      GET
+      
+        <pre><code>/items/W00003705</code></pre>
+      
+    </div>
+    Sample request
+    <div class="expanders">
+      
+      
+      
+      
+      <a href="#sample6-request-curl">curl</a><span>
+    </div>
+  </div>
+
+  <div id="sample6-url" class="collapsible">
+    <pre><code>/items/W00003705</code></pre>
+  </div>
+  <div id="sample6-request-headers" class="collapsible">
+    <pre><code></code></pre>
+  </div>
+  <div id="sample6-request-payload" class="collapsible">
+    
+  </div>
+  <div id="sample6-request-attachments" class="collapsible">
+    
+  </div>
+  <div id="sample6-request-curl" class="collapsible">
+    <pre><code class="wrap">curl -X <span class="hljs-keyword">GET</span> <span class="hljs-string">"http://visionarchive.io/items/W00003705"</span></code></pre>
+  </div>
+
+  <div class="response">
+    Response 200 OK
+    <div class="expanders">
+      
+      
+        <a href="#sample6-response-body">body</a>
+      
+    </div>
+  </div>
+
+  <div id="sample6-response-headers" class="collapsible">
+    <pre><code></code></pre>
+  </div>
+  <div id="sample6-response-body" class="collapsible">
+    <pre><code>[
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab36886"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"33007513382472098000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00003705"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">3</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab36887"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"81163721159100530001"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00003705"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">0</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab36888"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"43263617949560280000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00003705"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">1</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab36889"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"38534387806430460000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00003705"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">3</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>},
+  {
+    "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab3688a"</span></span>,
+    "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"62254156870767480000"</span></span>,
+    "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00003705"</span></span>,
+    "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">3</span></span>,
+    "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+  </span>}
+]</code></pre>
+  </div>
+
+</div>
+
+              </li>
+            
+          </ul>
+        </div>
+      
+        <div class="group">
+          <a name="-user"></a>
+          <h2>/user</h2>
+          <ul class="samples">
+            
+              <li>
+                <div class="summary">
+  <p>tests the router connection</p>
+
+</div>
+
+<div class="operation">
+
+  <div class="method color-GET">
+    GET
+  </div>
+
+  <div class="request">
+    <div class="url">
+      GET
+      
+        <pre><code>/hello</code></pre>
+      
+    </div>
+    Sample request
+    <div class="expanders">
+      
+      
+      
+      
+      <a href="#sample0-request-curl">curl</a><span>
+    </div>
+  </div>
+
+  <div id="sample0-url" class="collapsible">
+    <pre><code>/hello</code></pre>
+  </div>
+  <div id="sample0-request-headers" class="collapsible">
+    <pre><code></code></pre>
+  </div>
+  <div id="sample0-request-payload" class="collapsible">
+    
+  </div>
+  <div id="sample0-request-attachments" class="collapsible">
+    
+  </div>
+  <div id="sample0-request-curl" class="collapsible">
+    <pre><code class="wrap">curl -X <span class="hljs-keyword">GET</span> <span class="hljs-string">"http://visionarchive.io/hello"</span></code></pre>
+  </div>
+
+  <div class="response">
+    Response 200 OK
+    <div class="expanders">
+      
+      
+        <a href="#sample0-response-body">body</a>
+      
+    </div>
+  </div>
+
+  <div id="sample0-response-headers" class="collapsible">
+    <pre><code></code></pre>
+  </div>
+  <div id="sample0-response-body" class="collapsible">
+    <pre><code>{
+  "<span class="hljs-attribute">message</span>": <span class="hljs-value"><span class="hljs-string">"hello world"</span>
+</span>}</code></pre>
+  </div>
+
+</div>
+
+              </li>
+            
+              <li>
+                <div class="summary">
+  <p>Set rating on a item for this user. user id, item id, rating (int: 0, 1, 2, 3, 4 or 5)</p>
+
+</div>
+
+<div class="operation">
+
+  <div class="method color-PUT">
+    PUT
+  </div>
+
+  <div class="request">
+    <div class="url">
+      PUT
+      
+        <pre><code>/user/33007513382472098000/item/W00003705</code></pre>
+      
+    </div>
+    Sample request
+    <div class="expanders">
+      
+      
+        <a href="#sample1-request-headers">headers</a><span>
+      
+      
+        <a href="#sample1-request-payload">payload</a>
+      
+      
+      <a href="#sample1-request-curl">curl</a><span>
+    </div>
+  </div>
+
+  <div id="sample1-url" class="collapsible">
+    <pre><code>/user/33007513382472098000/item/W00003705</code></pre>
+  </div>
+  <div id="sample1-request-headers" class="collapsible">
+    <pre><code><span class="hljs-attribute">content-type</span>: <span class="hljs-string">application/json</span>
+<span class="hljs-attribute">content-length</span>: <span class="hljs-string">61</span>
+</code></pre>
+  </div>
+  <div id="sample1-request-payload" class="collapsible">
+    <pre><code>{
+  "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"33007513382472098000"</span></span>,
+  "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00003705"</span></span>,
+  "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">1</span>
+</span>}</code></pre>
+  </div>
+  <div id="sample1-request-attachments" class="collapsible">
+    
+  </div>
+  <div id="sample1-request-curl" class="collapsible">
+    <pre><code class="wrap">curl -X PUT -H <span class="hljs-string">"content-type: application/json"</span> -H <span class="hljs-string">"content-length: 61"</span> -d <span class="hljs-string">'{"</span>user<span class="hljs-string">":"</span><span class="hljs-number">33007513382472098000</span><span class="hljs-string">","</span>item<span class="hljs-string">":"</span>W00003705<span class="hljs-string">","</span>rating<span class="hljs-string">":1}'</span> <span class="hljs-string">"http://visionarchive.io/user/33007513382472098000/item/W00003705"</span></code></pre>
+  </div>
+
+  <div class="response">
+    Response 200 OK
+    <div class="expanders">
+      
+      
+        <a href="#sample1-response-body">body</a>
+      
+    </div>
+  </div>
+
+  <div id="sample1-response-headers" class="collapsible">
+    <pre><code></code></pre>
+  </div>
+  <div id="sample1-response-body" class="collapsible">
+    <pre><code>{
+  "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span></span>,
+  "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"33007513382472098000"</span></span>,
+  "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">1</span></span>,
+  "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00003705"</span></span>,
+  "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab36885"</span>
+</span>}</code></pre>
+  </div>
+
+</div>
+
+              </li>
+            
+              <li>
+                <div class="summary">
+  <p>Only accepts one rating per user</p>
+
+</div>
+
+<div class="operation">
+
+  <div class="method color-PUT">
+    PUT
+  </div>
+
+  <div class="request">
+    <div class="url">
+      PUT
+      
+        <pre><code>/user/33007513382472098000/item/W00003705</code></pre>
+      
+    </div>
+    Sample request
+    <div class="expanders">
+      
+      
+        <a href="#sample2-request-headers">headers</a><span>
+      
+      
+        <a href="#sample2-request-payload">payload</a>
+      
+      
+      <a href="#sample2-request-curl">curl</a><span>
+    </div>
+  </div>
+
+  <div id="sample2-url" class="collapsible">
+    <pre><code>/user/33007513382472098000/item/W00003705</code></pre>
+  </div>
+  <div id="sample2-request-headers" class="collapsible">
+    <pre><code><span class="hljs-attribute">content-type</span>: <span class="hljs-string">application/json</span>
+<span class="hljs-attribute">content-length</span>: <span class="hljs-string">61</span>
+</code></pre>
+  </div>
+  <div id="sample2-request-payload" class="collapsible">
+    <pre><code>{
+  "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"33007513382472098000"</span></span>,
+  "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00003705"</span></span>,
+  "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">3</span>
+</span>}</code></pre>
+  </div>
+  <div id="sample2-request-attachments" class="collapsible">
+    
+  </div>
+  <div id="sample2-request-curl" class="collapsible">
+    <pre><code class="wrap">curl -X PUT -H <span class="hljs-string">"content-type: application/json"</span> -H <span class="hljs-string">"content-length: 61"</span> -d <span class="hljs-string">'{"</span>user<span class="hljs-string">":"</span><span class="hljs-number">33007513382472098000</span><span class="hljs-string">","</span>item<span class="hljs-string">":"</span>W00003705<span class="hljs-string">","</span>rating<span class="hljs-string">":3}'</span> <span class="hljs-string">"http://visionarchive.io/user/33007513382472098000/item/W00003705"</span></code></pre>
+  </div>
+
+  <div class="response">
+    Response 200 OK
+    <div class="expanders">
+      
+      
+        <a href="#sample2-response-body">body</a>
+      
+    </div>
+  </div>
+
+  <div id="sample2-response-headers" class="collapsible">
+    <pre><code></code></pre>
+  </div>
+  <div id="sample2-response-body" class="collapsible">
+    <pre><code>{
+  "<span class="hljs-attribute">_id</span>": <span class="hljs-value"><span class="hljs-string">"57602fb6210ac8e3dab36885"</span></span>,
+  "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"33007513382472098000"</span></span>,
+  "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">3</span></span>,
+  "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00003705"</span></span>,
+  "<span class="hljs-attribute">__v</span>": <span class="hljs-value"><span class="hljs-number">0</span>
+</span>}</code></pre>
+  </div>
+
+</div>
+
+              </li>
+            
+              <li>
+                <div class="summary">
+  <p>Only accepts ratings between 0 and 5</p>
+
+</div>
+
+<div class="operation">
+
+  <div class="method color-PUT">
+    PUT
+  </div>
+
+  <div class="request">
+    <div class="url">
+      PUT
+      
+        <pre><code>/user/33007513382472098000/item/W00003705</code></pre>
+      
+    </div>
+    Sample request
+    <div class="expanders">
+      
+      
+        <a href="#sample3-request-headers">headers</a><span>
+      
+      
+        <a href="#sample3-request-payload">payload</a>
+      
+      
+      <a href="#sample3-request-curl">curl</a><span>
+    </div>
+  </div>
+
+  <div id="sample3-url" class="collapsible">
+    <pre><code>/user/33007513382472098000/item/W00003705</code></pre>
+  </div>
+  <div id="sample3-request-headers" class="collapsible">
+    <pre><code><span class="hljs-attribute">content-type</span>: <span class="hljs-string">application/json</span>
+<span class="hljs-attribute">content-length</span>: <span class="hljs-string">64</span>
+</code></pre>
+  </div>
+  <div id="sample3-request-payload" class="collapsible">
+    <pre><code>{
+  "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"33007513382472098000"</span></span>,
+  "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00003705"</span></span>,
+  "<span class="hljs-attribute">rating</span>": <span class="hljs-value"><span class="hljs-number">6.91</span>
+</span>}</code></pre>
+  </div>
+  <div id="sample3-request-attachments" class="collapsible">
+    
+  </div>
+  <div id="sample3-request-curl" class="collapsible">
+    <pre><code class="wrap">curl -X PUT -H <span class="hljs-string">"content-type: application/json"</span> -H <span class="hljs-string">"content-length: 64"</span> -d <span class="hljs-string">'{"</span>user<span class="hljs-string">":"</span><span class="hljs-number">33007513382472098000</span><span class="hljs-string">","</span>item<span class="hljs-string">":"</span>W00003705<span class="hljs-string">","</span>rating<span class="hljs-string">":6.91}'</span> <span class="hljs-string">"http://visionarchive.io/user/33007513382472098000/item/W00003705"</span></code></pre>
+  </div>
+
+  <div class="response">
+    Response 200 OK
+    <div class="expanders">
+      
+      
+        <a href="#sample3-response-body">body</a>
+      
+    </div>
+  </div>
+
+  <div id="sample3-response-headers" class="collapsible">
+    <pre><code></code></pre>
+  </div>
+  <div id="sample3-response-body" class="collapsible">
+    <pre><code>{
+  "<span class="hljs-attribute">message</span>": <span class="hljs-value"><span class="hljs-string">"Bad rating number"</span>
+</span>}</code></pre>
+  </div>
+
+</div>
+
+              </li>
+            
+              <li>
+                <div class="summary">
+  <p>Un-set rating on item for this user item id, user id</p>
+
+</div>
+
+<div class="operation">
+
+  <div class="method color-DELETE">
+    DEL
+  </div>
+
+  <div class="request">
+    <div class="url">
+      DELETE
+      
+        <pre><code>/user/33007513382472098000/item/W00003705</code></pre>
+      
+    </div>
+    Sample request
+    <div class="expanders">
+      
+      
+        <a href="#sample4-request-headers">headers</a><span>
+      
+      
+        <a href="#sample4-request-payload">payload</a>
+      
+      
+      <a href="#sample4-request-curl">curl</a><span>
+    </div>
+  </div>
+
+  <div id="sample4-url" class="collapsible">
+    <pre><code>/user/33007513382472098000/item/W00003705</code></pre>
+  </div>
+  <div id="sample4-request-headers" class="collapsible">
+    <pre><code><span class="hljs-attribute">content-type</span>: <span class="hljs-string">application/json</span>
+<span class="hljs-attribute">content-length</span>: <span class="hljs-string">50</span>
+</code></pre>
+  </div>
+  <div id="sample4-request-payload" class="collapsible">
+    <pre><code>{
+  "<span class="hljs-attribute">user</span>": <span class="hljs-value"><span class="hljs-string">"33007513382472098000"</span></span>,
+  "<span class="hljs-attribute">item</span>": <span class="hljs-value"><span class="hljs-string">"W00003705"</span>
+</span>}</code></pre>
+  </div>
+  <div id="sample4-request-attachments" class="collapsible">
+    
+  </div>
+  <div id="sample4-request-curl" class="collapsible">
+    <pre><code class="wrap">curl -X DELETE -H <span class="hljs-string">"content-type: application/json"</span> -H <span class="hljs-string">"content-length: 50"</span> -d <span class="hljs-string">'{"</span>user<span class="hljs-string">":"</span><span class="hljs-number">33007513382472098000</span><span class="hljs-string">","</span>item<span class="hljs-string">":"</span>W00003705<span class="hljs-string">"}'</span> <span class="hljs-string">"http://visionarchive.io/user/33007513382472098000/item/W00003705"</span></code></pre>
+  </div>
+
+  <div class="response">
+    Response 200 OK
+    <div class="expanders">
+      
+      
+        <a href="#sample4-response-body">body</a>
+      
+    </div>
+  </div>
+
+  <div id="sample4-response-headers" class="collapsible">
+    <pre><code></code></pre>
+  </div>
+  <div id="sample4-response-body" class="collapsible">
+    <pre><code>{
+  "<span class="hljs-attribute">message</span>": <span class="hljs-value"><span class="hljs-string">"Rating deleted."</span>
+</span>}</code></pre>
+  </div>
+
+</div>
+
+              </li>
+            
+          </ul>
+        </div>
+      
+      
+    </div>
+
+    <footer>
+  <div class="row">
+    <div class="medium-8 columns">
+      <ul class="no-bullet">
+        <li>
+          Documentation generated on June 14th 2016, 12:24 pm
+        </li>
+        <li>
+          <a href="http://github.com/rprieto/supersamples">
+            Powered by supersamples
+            <div class="logo">
+              <div class="swatch color-GET"></div>
+              <div class="swatch color-POST"></div>
+              <div class="swatch color-PUT"></div>
+              <div class="swatch color-DELETE"></div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="scripts/zepto.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+
+  </body>
+
+</html>

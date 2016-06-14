@@ -1,0 +1,58 @@
+{
+    "name": "item-ratings-api",
+    "version": "1.0.0",
+    "description": "An api to return generic ratings",
+    "main": "server.js",
+    "scripts": {
+        "test": "mocha --reporter supersamples"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pretentiousgit/item-ratings-api.git"
+    },
+    "keywords": [
+        "api",
+        "ratings"
+    ],
+    "author": "Alex Leitch",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/pretentiousgit/item-ratings-api/issues"
+    },
+    "homepage": "https://github.com/pretentiousgit/item-ratings-api/#readme",
+    "dependencies": {
+        "async": "latest",
+        "bcrypt": "^0.8.5",
+        "bluebird": "latest",
+        "body-parser": "~1.0.1",
+        "chai": "^3.5.0",
+        "cli-table": "^0.3.1",
+        "connect-history-api-fallback": "^1.1.0",
+        "connect-logger": "0.0.1",
+        "connect-mongo": "latest",
+        "cookie": "latest",
+        "cookie-parser": "latest",
+        "express": "^4.0.0",
+        "express-session": "latest",
+        "jsonwebtoken": "^5.0.4",
+        "jwt-simple": "^0.4.1",
+        "lodash": "latest",
+        "method-override": "latest",
+        "mocha": "^2.1.0",
+        "moment": "^2.10.3",
+        "mongodb": "^2.0.36",
+        "mongodb-uri": "^0.9.7",
+        "mongoose": "latest",
+        "mongoose-unique-validator": "^1.0.2",
+        "mongoose-validator": "^1.2.4",
+        "morgan": "latest",
+        "multer": "^1.1.0",
+        "supersamples": "^0.4",
+        "supertest": "^0.15.0",
+        "supertest-as-promised": "^1.0.0"
+    },
+    "devDependencies": {
+        "mockgoose": "^5.3.3",
+        "sinon": "^1.17.3"
+    }
+}
