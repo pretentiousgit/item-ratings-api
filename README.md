@@ -9,9 +9,11 @@ You will need:
 
 Clone this repository into its host directory, enter the main directory, and then install dependencies.
 
-`Documents$ git clone git@github.com:pretentiousgit/item-ratings-api.git`
-`Documents$ cd item-ratings-api`
-`Documents$ npm install`
+`yourProjectsDirectory$ git clone git@github.com:pretentiousgit/item-ratings-api.git`
+
+`yourProjectsDirectory$ cd item-ratings-api`
+
+`yourProjectsDirectory$ npm install`
 
 to install package dependencies.
 
@@ -30,8 +32,8 @@ to install package dependencies.
   - If it is, try typing `mongod` at terminal
 
 #### A Secrets.js file is required at root.
-* Rename secretStub.js to secrets.js, and generate an app secret for your application.
 * In `database_info:`, enter your database connection string - something like `mongodb://127.0.0.1/ObjectDB`
+* Rename `secretStub.js` to `secrets.js`, and generate an app secret for your application. Ideally, your secret will be something like 64 to 128 characters that are really, really random. This is basically a password so that if you later do some sort of authentication, which is not present in this demo, you can encode it with reasonable confidence it is mostly secure.
 
 ### Running App
 Run the app from the main directory using `node server.js`
