@@ -6,6 +6,7 @@
     "scripts": {
         "test": "mocha --reporter supersamples"
     },
+    "engines" : { "node" : ">6.2.1" },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/pretentiousgit/item-ratings-api.git"
