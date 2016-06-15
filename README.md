@@ -1,4 +1,8 @@
-# film-ratings-api
+# item-ratings-api
+[![node](https://img.shields.io/node/v/gh-badges.svg?maxAge=2592000)]()
+[]()
+[]()
+
 
 ### Installation
 You will need:
